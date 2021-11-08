@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int numeros;
+
+int main()
+{
+    int x,y,z;
+
+    printf ("\n1- Soma");
+    printf ("\n2- Subtracao");
+    printf ("\n3- Multiplicacao");
+    printf ("\n4- Divisao");
+    printf ("\nQual conta deseja?");
+    scanf ("%d%*c",&numeros);
+    switch(numeros)
+    {
+    case 1:
+    printf ("\nDigite o primeiro numero:"); ///Informando o usuario com uma mensagem na tela do que oque ele deve fazer.
+    scanf("%d%*c",&y); ///Scaneando a variavel, dando um valor.
+    printf ("\nDigite o segundo numero:");
+    scanf ("%d%*c",&z);
+    x = y + z;
+    printf ("\nResultado:%d",x);
+    break;
+     ///Soma
+    case 2:
+        printf ("\nDigite o primeiro numero:"); ///Informando o usuario com uma mensagem na tela do que oque ele deve fazer.
+    scanf("%d%*c",&y); ///Scaneando a variavel, dando um valor.
+    printf ("\nDigite o segundo numero:");
+    scanf ("%d%*c",&z);
+    x = y - z;
+    printf ("\nResultado:%d",x);
+    break;
+    ///Subtração
+    case 3: printf ("\nDigite o primeiro numero:"); ///Informando o usuario com uma mensagem na tela do que oque ele deve fazer.
+    scanf("%d%*c",&y); ///Scaneando a variavel, dando um valor.
+    printf ("\nDigite o segundo numero:");
+    scanf ("%d%*c",&z);
+    x = y * z;
+    printf ("\nResultado:%d",x);
+    break;
+    ///Multiplicacao
+    case 4:
+    printf ("\nDigite o primeiro numero:"); ///Informando o usuario com uma mensagem na tela do que oque ele deve fazer.
+    scanf("%d%*c",&y); ///Scaneando a variavel, dando um valor.
+    printf ("\nDigite o segundo numero:");
+    scanf ("%d%*c",&z);
+    x = y/z;
+    printf ("\nResultado:%d",x);
+    break;
+    ///Divisao
+    }
+
+    return 0;
+}
